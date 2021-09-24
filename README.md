@@ -1,6 +1,6 @@
 # Java-Questions-and-Solutions
 
-Scroll-down to refer contribution guidelines or refer [Contributing.md]()
+Scroll-down to refer contribution guidelines or refer [Contribute.md](https://github.com/SarthakKeshari/Java-Questions-and-Solutions/blob/master/Contribute.md)
 
 ## Questions covered
 
