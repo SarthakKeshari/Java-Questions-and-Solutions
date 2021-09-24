@@ -11,8 +11,12 @@ Other contribution opportunities - <br>
 ### Refer [Contribute.md](https://github.com/SarthakKeshari/Java-Questions-and-Solutions/blob/master/Contribute.md) for contribution guidelines
 -----
 
+### Benefits
 
-Collect *10k points* and become a **Collaborator**
+1. Collect *5.5k points* and earn your **Contribution Certificate**
+2. Collect *10k points* and become a **Collaborator**
+
+#### Points Scheme
 Level | Points
 ------------ | -------------
 Level 0 | 5 Points
