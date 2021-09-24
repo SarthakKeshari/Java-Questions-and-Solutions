@@ -1,4 +1,4 @@
-# Java-Questions-and-Solutions
+# Java-Questions-and-Solutions 🎯
 
 This repository aims to solve and create new problems from different spheres of coding, which will serve as a single point access for all the students and learners to get solutions to the problems and a chance to solve problems as well.
 
@@ -6,7 +6,7 @@ You may be a part of this repository by contributing questions or solutions or b
 
 Scroll-down to refer contribution guidelines or refer [Contribute.md](https://github.com/SarthakKeshari/Java-Questions-and-Solutions/blob/master/Contribute.md)
 
-## Questions covered
+## Questions covered 📚
 
 - Arrays
   - 1D Arrays
@@ -68,7 +68,7 @@ Scroll-down to refer contribution guidelines or refer [Contribute.md](https://gi
 
 
 
-## Contributing Guidelines
+## Contributing Guidelines 📝
 
 We love your input! We want you to make contributing to this simple questions/solutions repository as easy and transparent as possible, whether it's:
 
@@ -144,12 +144,6 @@ The aim of this repository is:
 
 Thanks to these wonderful peoples ✨✨:
 
-<table>
-	<tr>
-		<td>
-			<a href="https://github.com/SarthakKeshari/Java-Questions-and-Solutions/graphs/contributors">
+<a href="https://github.com/SarthakKeshari/Java-Questions-and-Solutions/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=SarthakKeshari/Java-Questions-and-Solutions" />
 </a>
-		</td>
-	</tr>
-</table>
