@@ -1,7 +1,7 @@
 ---
 name: Add a question
 about: If you want a question to be solved by other contributors
-title: "[Question]"
+title: "[Question Title]"
 labels: ''
 assignees: ''
 
