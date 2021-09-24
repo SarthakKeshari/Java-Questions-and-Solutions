@@ -1,5 +1,9 @@
 # Java-Questions-and-Solutions
 
+This repository aims to solve and create new problems from different spheres of coding, which will serve as a single point access for all the students and learners to get solutions to the problems and a chance to solve problems as well.
+
+You may be a part of this repository by contributing questions or solutions or both to the repository.
+
 Scroll-down to refer contribution guidelines or refer [Contribute.md](https://github.com/SarthakKeshari/Java-Questions-and-Solutions/blob/master/Contribute.md)
 
 ## Questions covered
