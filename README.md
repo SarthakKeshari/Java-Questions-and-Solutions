@@ -2,63 +2,63 @@
 
 ## Questions covered
 
-> Arrays
->> 1D Arrays
->> 2D Arrays
+- Arrays
+  - 1D Arrays
+  - 2D Arrays
 
-> Basic Codes
+- Basic Codes
 
-> Bit Manipulation
+- Bit Manipulation
 
-> CodeChef
+- CodeChef
 
-> CodeForces
+- CodeForces
 
-> Data Structure
->> Graph
->>> Directed Graph
->>> Undirected Graph
->> Heap
->> Linked List
->>> Circular Linked List
->>> Doubly Linked List
->>> Single Linked List
->> Queue
->>> Basic Queue
->>> Circular Queue
->>> Priority Queue
->> Stack
->> Trees
->>> AVL Trees
->>> B+ Trees
->>> Binary Trees
->>> Red Black Trees
+- Data Structure
+  - Graph
+    - Directed Graph
+    - Undirected Graph
+  - Heap
+  - Linked List
+    - Circular Linked List
+    - Doubly Linked List
+    - Single Linked List
+  - Queue
+    - Basic Queue
+    - Circular Queue
+    - Priority Queue
+  - Stack
+  - Trees
+    - AVL Trees
+    - B+ Trees
+    - Binary Trees
+    - Red Black Trees
 
-> Dynamic Programming
+- Dynamic Programming
 
-> Exception Handling
+- Exception Handling
 
-> File Handling
+- File Handling
 
-> Game Theory
+- Game Theory
 
-> Hackerearth
+- Hackerearth
 
-> Hackerrank
+- Hackerrank
 
-> Interview Questions
+- Interview Questions
 
-> Leet Code
+- Leet Code
 
-> OOPs
+- OOPs
 
-> Recursion
+- Recursion
 
-> Searching
+- Searching
 
-> Sorting
+- Sorting
 
-> String Handling
+- String Handling
 
 
 
