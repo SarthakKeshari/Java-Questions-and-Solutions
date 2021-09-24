@@ -1,5 +1,7 @@
 # Java-Questions-and-Solutions
 
+Scroll-down to refer contribution guidelines or refer [Contributing.md]()
+
 ## Questions covered
 
 - Arrays
@@ -62,7 +64,7 @@
 
 
 
-## Contributing Guidlines
+## Contributing Guidelines
 
 We love your input! We want you to make contributing to this simple questions/solutions repository as easy and transparent as possible, whether it's:
 
