@@ -4,8 +4,14 @@ This repository aims to solve and create new problems from different spheres of 
 
 You may be a part of this repository by contributing questions or solutions or both to the repository.
 
+Star ⭐ |  Fork 🔗 |  Contribute 💻
+
+<br>
+
 Other contribution opportunities - <br>
 <b>C++ - [CPP-Questions-and-Solutions](https://github.com/SarthakKeshari/CPP-Questions-and-Solutions)</b>
+
+
 
 -----
 ### Refer [CONTRIBUTING.md](https://github.com/SarthakKeshari/Java-Questions-and-Solutions/blob/master/CONTRIBUTING.md) for contribution guidelines
