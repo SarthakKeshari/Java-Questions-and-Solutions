@@ -1,6 +1,6 @@
 ---
 name: Add a question
-about: If you want a question to be solved by other contributors
+about: Propose your own question
 title: "[Question Title]"
 labels: ''
 assignees: ''
