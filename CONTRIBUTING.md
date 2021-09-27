@@ -10,7 +10,43 @@ We love your input! We want you to make contributing to this simple questions/so
 
 ## Contributing
 
- In general, we follow the "fork-and-pull" Git workflow.
+Different types of contribution practices for this repository - 
+#### 1) Add a question and provide the solution for the same
+- Steps - <br>
+  Step a) Click on Issues tab <br>
+  Step b) Click on New Issue button <br>
+  Step c) Click Get Started button <br>
+  Step d) Fill a short description form <br>
+  Step e) Press Submit New Issue button <br>
+  Step f) Now Comment - "Kindly assign this issue to me" <br>
+  Step g) Press on Comment button <br>
+  Step h) Wait for the issue to be assigned to you. <br>
+  Step i) After the issue get assigned to you. <br>
+          You'll also receive my comment stating in which folder the solution needs to be placed as well as the deadline for solution submission. <br>
+  Step j) Now you can workout the solution and generate PR(Pull request).
+  
+#### 2) Provide a solution
+- Steps - <br>
+  Step a) Click on Issues tab <br>
+  Step b) Click on one of the issues which has not been assigned to anyone <br>
+  Step c) Read the question description throughly <br>
+  Step d) If know are clear with the question description then Comment - "Kindly assign this issue to me" <br>
+  Step e) Press on Comment button <br>
+  Step f) Wait for the issue to be assigned to you. <br>
+  Step g) After the issue get assigned to you. <br>
+          You'll also receive my comment stating in which folder the solution needs to be placed as well as the deadline for solution submission. <br>
+  Step h) Now you can workout the solution and generate PR(Pull request)
+  
+#### 3) Add a question
+- Steps - <br>
+  Step a) Click on Issues tab <br>
+  Step b) Click on New Issue button <br>
+  Step c) Click Get Started button <br>
+  Step d) Fill a short description form <br>
+  Step e) Press Submit New Issue button <br>
+  
+<br>
+In general, we follow the "fork-and-pull" Git workflow.
 
  1. **Fork** the repo on GitHub
  2. **Clone** the project to your own machine
