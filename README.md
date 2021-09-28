@@ -110,5 +110,5 @@ Rank | Contributor | Points Collected
 Thanks to these wonderful peoples ✨✨:
 
 <a href="https://github.com/SarthakKeshari/Java-Questions-and-Solutions/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=SarthakKeshari/Java-Questions-and-Solutions" />
+  <img src="https://contrib.rocks/image?repo=SarthakKeshari/Java-Questions-and-Solutions" /> 
 </a>
