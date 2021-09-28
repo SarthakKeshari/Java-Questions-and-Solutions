@@ -13,11 +13,13 @@ Attach here
 ### Checklist:
 Eg - If your code follow the below guidelines. Kindly change [] to [x]
 
-[] My code follows the style guidelines of this project.<br>
+All the conditions should be fulfilled for considering your code for merging -
+
+[] My code follows the guidelines of this project.<br>
 [] I have performed a self-review of my own code.<br>
-[] I have commented on my code, particularly in hard-to-understand areas.<br>
+[] I have commented my code.<br>
 [] My code gives the correct output.<br>
 [] I confirm that I have not copied the code from anywhere. In case its found that I have copied I can be banned from the repository.<br>
 
 
-[] I affirm that I strictly follow contributing guide and code of conduct.
+[] I affirm that I strictly follow contributing guidelines and code of conduct.
