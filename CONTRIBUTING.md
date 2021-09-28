@@ -45,6 +45,8 @@ Different types of contribution practices for this repository -
   Step d) Fill a short description form <br>
   Step e) Press Submit New Issue button <br>
   
+  ### NOTE - Adding question and/or solution of any ongoing live challenges may lead to permanent ban from repository
+  
 <br>
 In general, we follow the "fork-and-pull" Git workflow.
 
