@@ -9,10 +9,15 @@ import java.util.StringTokenizer;
 public class ArrayRotation {
 
     public static void main(String[] args) {
+
+        //To read the input from console
         MyScanner myScanner = new MyScanner();
+        //Number of test cases
         int testCase = myScanner.nextInt();
         while (testCase > 0) {
+            //array size
             int n = myScanner.nextInt();
+            //number of steps to rotate
             int m = myScanner.nextInt();
             int[] arr = new int[n];
             for (int i = 0; i < n; i++) {
@@ -21,9 +26,11 @@ public class ArrayRotation {
 
             int l = arr.length;
             for (int i = 0; i < m; i++) {
+                //left rotation
                 printArrayValue(leftRotate(arr, l));
             }
             for (int i = 0; i < m; i++) {
+                //right rotation
                 printArrayValue(rightRotate(arr, l));
             }
             testCase--;
