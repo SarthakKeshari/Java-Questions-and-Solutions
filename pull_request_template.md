@@ -1,4 +1,4 @@
-### Issue/Solution Id you have worked upon - 
+### Issue Id you have worked upon - 
 Your answer
 
 ### Briefly explain your program logic - 
@@ -15,6 +15,7 @@ Eg - If your code follow the below guidelines. Kindly change [] to [x]
 
 All the conditions should be fulfilled for considering your code for merging -
 
+[] I have mentioned the question as comment in my solution file.<br>
 [] My code follows the guidelines of this project.<br>
 [] I have performed a self-review of my own code.<br>
 [] I have commented my code.<br>
