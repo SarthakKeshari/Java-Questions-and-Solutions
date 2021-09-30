@@ -1,3 +1,4 @@
+//Find the roots of the quadratic Equation
 import java.util.Scanner;
 
 public class quadratic_roots {
@@ -20,6 +21,7 @@ public class quadratic_roots {
 		// d stands for determinant
 		double d = (b * b) - 4 * (a * c);
 		
+		//if d = 0 roots are equal and real, id d>0 roots are real and distinct
 		if (d >= 0) {
 			root1 = (-b + Math.sqrt(d)) / (2 * a);
 			root2 = (-b - Math.sqrt(d)) / (2 * a);
@@ -33,7 +35,7 @@ public class quadratic_roots {
 				System.out.println("Roots are real and distinct");
 			}
 		}
-		
+		//d<0, roots are imaginary
 		else {
 			double real = -b / (2 * a);
 			double imaginary = Math.sqrt(-d) / (2 * a);				
@@ -42,5 +44,4 @@ public class quadratic_roots {
 			System.out.println("Roots are imaginary!");
 		}
 	}
-
 }
