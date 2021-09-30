@@ -19,7 +19,7 @@ class swap2
         }
         System.out.println("After swap \n"+"x= "+x+"\ny= "+y);
     }
-    public static void main()throws IOException
+    public static void main(String args[])throws IOException
     {
         InputStreamReader inp=new InputStreamReader(System.in);  
         BufferedReader br=new BufferedReader(inp);
