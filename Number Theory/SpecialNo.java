@@ -1,3 +1,4 @@
+//Write a program to check if a number is Special or not
 import java.util.Scanner;
  
 public class SpecialNo {
