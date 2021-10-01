@@ -1,3 +1,10 @@
+/*
+Write a program to check a number for palindrome prime.
+
+Palindrome - A palindromic number is a number (such as 16461) that remains the same when its digits are reversed.
+Prime - a whole number greater than 1 that cannot be exactly divided by any whole number other than itself and 1
+*/
+
 import java.io.*;
 import java.util.*;
 public class PrimePal
