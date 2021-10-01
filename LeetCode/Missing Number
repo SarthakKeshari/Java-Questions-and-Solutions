@@ -1,0 +1,19 @@
+// link - https://leetcode.com/problems/missing-number/
+
+
+// Approach:
+// Since the array contains distinct numbers in the range [0, n] hence if we calculate xor of all the numbers in this
+// range and then xor it with the actual elements present in the array it will give us the element which is missing.
+// This is because x ^ x = 0, so all the numbers will result in 0 except the one which is missing.
+
+class Solution {
+    public int missingNumber(int[] nums) {
+        int n = nums.length;
+        int ans = n;
+        
+        for (int i = 0; i < n; i++) {
+            ans ^= nums[i] ^ i;
+        }
+        return ans;
+    }
+}
