@@ -20,7 +20,7 @@ class Emirp {
                 int d = x % 10;
                 r = r * 10 + d;
             }
-            for (int x = 2; x < n; x++) {         // to check the reversed number for being prime or not
+            for (int x = 2; x < r; x++) {         // to check the reversed number for being prime or not
                 if (r % x == 0) {
                     emirp = false;
                     break;
