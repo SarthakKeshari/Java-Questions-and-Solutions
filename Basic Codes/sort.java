@@ -1,7 +1,7 @@
 // Sir this is merge sort time complexity to sort is O(nlogn)
 
 import java.util.*;  
-class MergeSort 
+class Main
 {
     void merge(int arr[], int l, int m, int r)
     {
@@ -63,12 +63,12 @@ class MergeSort
         System.out.print("Enter ten numbers for the array"); 
         for(int i=0; i<10; i++)  
         {  
-          array[i]=sc.nextInt();  
+          arr[i]=sc.nextInt();  
         } 
         System.out.println("Given Array");
         printArray(arr);
   
-        MergeSort ob = new MergeSort();
+        Main ob = new Main();
         ob.sort(arr, 0, arr.length - 1);
   
         System.out.println("\nSorted array");
