@@ -2,6 +2,22 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+/*
+
+    QUESTION:
+
+    Chef and Divyam are playing a game with the following rules:
+
+    First, an integer X! is written on a board.
+    Chef and Divyam alternate turns; Chef plays first.
+    In each move, the current player should choose a positive integer D which is divisible by up to Y distinct primes
+    and does not exceed the integer currently written on the board. Note that 1 is not a prime.
+    D is then subtracted from the integer on the board, i.e. if the integer written on the board before this move was A,
+    it is erased and replaced by A−D.
+    When one player writes 0 on the board, the game ends and this player wins.
+    Given X and Y, determine the winner of the game.
+ */
+
 public class PrimeGame {
 
     private static final int NUMBER = 1000000;
