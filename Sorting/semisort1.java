@@ -11,8 +11,11 @@ class semisort1
      {
         int x;
         int [] tmparr =ar.clone(); //A method to clone an array
+        if(ln%2==0)        
+        {x=(ln/2)-1; }
+        else
+        {x=(ln/2);}
         
-        x=(ln/2);       
         Arrays.sort(ar,0,(x+1));          //A method to sort array in ascending order from specified start index(inclusive)
         Arrays.sort(tmparr,(x+1),(ln));   // to end index(exclusive) .   
         if(styl.equals("AD"))
