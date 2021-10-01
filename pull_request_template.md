@@ -4,7 +4,7 @@ Your answer
 ### Briefly explain your program logic - 
 Your answer
 
-### Screenshots(Attach 2 screenshots of sample input and output) - 
+### Screenshots(Attach 2 screenshots of your own input and output) - 
 Attach here
 
 
