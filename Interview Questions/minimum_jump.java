@@ -1,10 +1,13 @@
+// Q.Given an array of integers where each element represents the max number of steps that can be made forward from that element. Return the minimum number of jumps to reach the end of the array. If an element is 0, it cannot move through that element. If the end isn’t reachable, return -1 ?
 
+// https://www.geeksforgeeks.org/minimum-number-of-jumps-to-reach-end-of-a-given-array/
+    
 // Java program to find Minimum
 // number of jumps to reach end
 import java.util.*;
 import java.io.*;
 
-class GFG {
+class Jump{
     // Returns minimum number of
     // jumps to reach arr[h] from arr[l]
     static int minJumps(int arr[], int l, int h) {
