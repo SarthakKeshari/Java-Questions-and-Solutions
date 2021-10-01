@@ -22,7 +22,7 @@ public class FibonacciSeries {
     // Method to print fibonacci series (Recursion)
     public static void fibonacciNumber(int n) {
 
-        if(n > 0) {
+        if(n > 2) {
 
             number3 = number1 + number2;
             number1 = number2;
