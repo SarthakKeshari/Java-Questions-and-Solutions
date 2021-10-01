@@ -32,7 +32,7 @@ class diagonal
     void input ()throws IOException  // A method to input the array order and elements.
     {    InputStreamReader inp=new InputStreamReader(System.in); 
          BufferedReader br=new BufferedReader(inp);
-         System.out.println("Enter the matrix order of the square matrix");
+         System.out.println("Enter the matrix order of the matrix");
          p=Integer.parseInt(br.readLine());
          q=Integer.parseInt(br.readLine());
          a=new int[p][q]; // creating a 2D array.
