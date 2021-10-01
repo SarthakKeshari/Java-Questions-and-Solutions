@@ -50,23 +50,28 @@ class diagonal
             System.out.println("\n");
           }
         }
-    void logic() // A method to print the diagonal elements..
+    void logic() // A method to print the diagonal elements.. 
     {
-        System.out.println("The diagonal elements of the matrix are");
-      for(int i=0;i<p;i++)
-      {    int j=i;
+     /* The logic() method prints the elements on the diagonal one by one using their index positions 
+        Firstly starting with the number in the top most left corner. Then the number below it and the
+        number diagonaly oposite to it is printed, thus moving diagonaly from left to right.
+        */ 
+        
+       System.out.println("The diagonal elements of the matrix are"); 
+      for(int i=0;i<p;i++)                         //This part of the for loop prints diagonal elements..
+      {   int j=i;                                //until the principal diagonal(including elements on principal diagonal..
           for(int x=0;x<=i && x<q;x++,j--)
           {
-             System.out.print(a[j][x]+"\t");
+             System.out.print(a[j][x]+"\t");     
             }
          System.out.println();
     }
-     for( int i=1;i<q;i++)
+     for( int i=1;i<q;i++)                          //This part is for the elements that are below the principal diagonal... 
      {
          int j=p-1;
-       for(int x=i;x<q;x++,j--)
-          {
-           System.out.print(a[j][x]+"\t");
+       for(int x=i;x<q;x++,j--)                   //Doing a dry run of the code with some smaple inputs
+          {                                      // is suggested for understanding the logic() method
+             System.out.print(a[j][x]+"\t");
             }
             System.out.println();
     }
