@@ -1,4 +1,4 @@
-//Write a program to check if a number is Special or not
+//Write a program to check if a number is Keprekar or not
 import java.util.*;
 class Keprekar{
     public static void main(String args[]){
