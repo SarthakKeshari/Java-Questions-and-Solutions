@@ -1,4 +1,7 @@
-
+/*
+Given an array of integers where each element represents the max number of steps that can be made forward from that element.
+Return the minimum number of jumps to reach the end of the array. If an element is 0, it cannot move through that element. If the end isn’t reachable, return -1.
+*/
 import java.util.*;
 
 public class minimum_Jumps {
