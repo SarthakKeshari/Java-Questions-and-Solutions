@@ -48,7 +48,7 @@ public class matrix_Multiplication {
                         sum = sum + first[c][k] * second[k][d];
                     }
 
-                    multiply[c][d] = sum; // here sum is the element of multiply matrix and one by 1 element will be inserted
+                    multiply[c][d] = sum; // here sum is the element of multiply matrix and one by one element will be inserted
                     sum = 0;
                 }
             }
