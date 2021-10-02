@@ -25,9 +25,17 @@ public class IsNthBitSet {
     }
 
     public static void checkNthBit(int a, int n) {
-        if ((a & (1 << (n - 1))) != 0) {
+        //Create a mask that has only nth bit set
+        int mask = 1 << (n - 1);
+
+        //If nth bit is set in 'a' then bitwise AND with mask
+        //will give non-zero result
+        if ((a & mask) != 0) {
             System.out.println("Bit is set at position " + n);
-        } else {
+        }
+        //If nth bit is unset in 'a' then bitwise AND with mask
+        //will give zero result
+        else {
             System.out.println("Bit is unset at position " + n);
         }
     }
