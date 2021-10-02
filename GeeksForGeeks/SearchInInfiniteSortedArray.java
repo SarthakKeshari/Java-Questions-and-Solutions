@@ -19,6 +19,8 @@ start=temp;
 
 return infiniteArray(nums,target,start,end);
     }
+    //once we find the start and end of the range by above function we can apply normal binary search and find the position of given element;
+    //if the target element is not there in the array the funcion will return -1;
     static int infiniteArray(int nums[],int target,int start ,int end){
 
 
