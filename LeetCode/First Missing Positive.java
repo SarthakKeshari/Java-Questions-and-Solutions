@@ -26,7 +26,7 @@ class Solution {
             while(nums[i] > 0 && nums[i] <= n && nums[nums[i] - 1] != nums[i]) {
                 int temp1 = nums[i];
                 int temp2 = nums[nums[i] - 1];
-                nums[i] = te;
+                nums[i] = temp2;
                 nums[temp1 - 1] = temp1;
             }
 
