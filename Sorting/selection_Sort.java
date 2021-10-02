@@ -1,4 +1,5 @@
-// @ how to implement Selection Sort in java
+// Q. how to implement Selection Sort in java ?
+
 class SelectionSort
 {
 	void sort(int arr[])
@@ -47,4 +48,3 @@ class SelectionSort
 		ob.printArray(arr);
 	}
 }
-/* This code is contributed by Rajat Mishra*/
