@@ -1,3 +1,7 @@
+/*
+Given two arrays arr1 and arr2. We need to find the intersection of both the arrays and return the result as a list.
+*/
+
 import java.util.*;
 
 public class intersectionOfTwoArrays{
