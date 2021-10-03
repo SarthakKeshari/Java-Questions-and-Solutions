@@ -71,6 +71,7 @@ class Solution {
         if(nums2.length < nums1.length)
         {
              return findMedianSortedArrays(nums2, nums1); 
+             //Considering partition length w.r.t. nums1
         }
         int n = nums1.length;
         int m = nums2.length;
@@ -83,14 +84,22 @@ class Solution {
              int partition1 = (low+high)>>1;
              int partition2 = (n+m+1)/2 - partition1;
             
+            //If the partition length becomes 0, we assign it large negative number(negative infinity)
+            //left1 is the largest number from nums1 in left partition
              int left1 = (partition1==0)?Integer.MIN_VALUE : nums1[partition1-1];
+
+            //left2 is the largest number from nums2 in left partition
              int left2 = (partition2==0)?Integer.MIN_VALUE : nums2[partition2-1];
             
+            //right1 is the largest number from nums1 in right partition
              int right1 = (partition1==n)?Integer.MAX_VALUE : nums1[partition1];
+
+            //right2 is the largest number from nums2 in right partition 
              int right2 = (partition2==m)?Integer.MAX_VALUE : nums2[partition2];
             
             if(left1<=right2 && left2<=right1)
             {
+                 //If partition is valid
                  if((n+m)%2==0)
                  {
                       return (max(left1, left2)+min(right1,right2))/2.0;
@@ -100,6 +109,7 @@ class Solution {
                        return max(left1, left2);
                  }
             }
+            //else reduce the partition from nums1
             else if(left1 > right2)
             {
                  high = partition1-1;
@@ -114,10 +124,13 @@ class Solution {
         
     }
     
+    //Utility function to return maximum of two numbers
     public int max(int a, int b)
     {
          return a>b? a:b;
     }
+
+    //Utility function to return minimun of two numbers
     public int min(int a, int b)
     {
          return a<b? a:b;
