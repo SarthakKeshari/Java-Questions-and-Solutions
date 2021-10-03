@@ -1,6 +1,7 @@
 {
     "java.project.sourcePaths": [
+        "Number Theory",
         "Basic Codes",
-        "Number Theory"
+        "Sorting"
     ]
 }
