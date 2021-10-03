@@ -21,6 +21,8 @@ class NQueens {
     
     public void findNQueens(List<List<String>> l, int n, int k, int a[])
     {
+        // if k == n then it means we have successfully placed all
+        // the N Queens so we add it to the resultant list
         if(k == n)
         {
             List<String> board = new ArrayList<String>();
@@ -44,6 +46,8 @@ class NQueens {
             l.add(board);
         }
         
+        // The for loop traverses the entire matrix placing each 
+        // queen at a position and checking if it is valid
         for(int i = k; i < n; i++)
         {
             for(int j = 0; j < n; j++)
@@ -60,6 +64,8 @@ class NQueens {
         }
     }
     
+    //This function checks whether placing Queen at a particular 
+    // position affects previously placed Queens
     public boolean isValid(int i, int j, int a[])
     {
         for(int k = 0; k < i; k++)
