@@ -1,3 +1,4 @@
+//Created a program to check whether given string is palindrome or not.
 import java.util.*;
 public class Main
 {
