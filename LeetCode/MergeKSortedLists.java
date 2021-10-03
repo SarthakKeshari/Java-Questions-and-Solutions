@@ -1,6 +1,8 @@
 //Solution to https://leetcode.com/problems/merge-k-sorted-lists/
 //Approach: We use the logic behind merging two sorted lists to merge k number of lists in sorted order. 
-//Here two lists are taken at a time and merged. The process is repeated until the last one list in the array.
+//Pair up k lists and merge each pair.
+//After the first pairing, k lists are merged into k/2 lists with average 2N/k length, then k/4, k/8 and so on.
+//This is repeated until we get the final sorted linked list.
 
 class Solution {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
