@@ -1,3 +1,5 @@
+//Write a program to perform binary search
+
 package com.company;
 
 public class binarysearch {
