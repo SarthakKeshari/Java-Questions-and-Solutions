@@ -17,11 +17,13 @@ public class ArmstrongNumber {
         int temp = num;
 
         int result;
+        //we will break the number into individual digits and cube it and then 
+        //sum the cubes of individual digits 
         for(result = 0; 0 < num; num /= 10) {
             int rem = num % 10;
             result += rem * rem * rem;
         }
-
+ // we check if the number is armstrong or not
         if (temp == result) {
             System.out.println(temp + " is a armstrong number");
         } else {
