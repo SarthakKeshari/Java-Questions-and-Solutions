@@ -1,3 +1,6 @@
+//Sort and Print Boundary Elements of 2D Matrix
+//This program sorts and prints the boundary/border elements of a 2-Dimensional Matrix
+
 import java.util.Scanner;
 
 public class MatrixBoundaryElements
