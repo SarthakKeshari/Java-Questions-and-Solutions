@@ -1,6 +1,12 @@
+// Ques: Implement next permutation, which rearranges numbers into the lexicographically 
+//       next greater permutation of numbers.
+
+
 import java.util.Scanner;
 
 public class nextpermutation {
+
+    //This function is used to take input and store the input in an array:
     public static int[] input() {
         System.out.println("Enter the size array:");
         Scanner sc = new Scanner(System.in);
@@ -14,7 +20,7 @@ public class nextpermutation {
         return a;
 
     }
-
+//This function is basically to print the required answer
     public static void print(int a[]) {
         System.out.println("The array: ");
         int n = a.length;
@@ -23,6 +29,7 @@ public class nextpermutation {
         }
         System.out.println();
     }
+    // The main logic of the code
     public static int[] nextPermutation(int[] nums) {
         int i = nums.length - 2;
         while (i >= 0 && nums[i + 1] <= nums[i]) {
@@ -55,7 +62,7 @@ public class nextpermutation {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+       
         
 
             int a[] = input();
