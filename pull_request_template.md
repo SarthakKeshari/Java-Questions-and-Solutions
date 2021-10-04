@@ -20,7 +20,7 @@ All the conditions should be fulfilled for considering your code for merging -
 [] I have performed a self-review of my own code.<br>
 [] I have commented my code.<br>
 [] My code gives the correct output.<br>
-[] I confirm that I have not copied the code from anywhere. In case its found that I have copied I can be banned from the repository.<br>
+[] I confirm that I have not copied the code from anywhere. In case its found that I have copied even after successful merge then I can be banned from the repository and hacktoberfest.<br>
 
 
 [] I affirm that I strictly follow contributing guidelines and code of conduct.
