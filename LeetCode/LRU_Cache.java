@@ -40,18 +40,18 @@
      private ListNode head = null;
      private ListNode tail = null;
 
-     private void intialize(int capacity) {
+     private void intialize(int capacity) { //this function will initialise the capacity
          this.capacity = capacity;
          this.size = 0;
         this.map = new HashMap<>();
-        this.head = this.tail = null;
+        this.head = this.tail = null; // this is the dummy node
      }
 
-     public LRUCache(int capacity) {
+     public LRUCache(int capacity) { 
          intialize(capacity);
      }
 
-     private void addLast(ListNode node) {
+     private void addLast(ListNode node) { // in this function we will add every value of the node in the linkedlist
          if (this.head == null)
              this.head = this.tail = node;
         else {
@@ -63,7 +63,7 @@
 
      }
 
-     private ListNode removeFirst() {
+     private ListNode removeFirst() { // in this function the first node of the linkelist will be removed
          ListNode node = this.head;
          if (this.head == this.tail)
              this.head = this.tail = null;
@@ -75,7 +75,7 @@
          return node;
      }
 
-     private ListNode removeLast() {
+     private ListNode removeLast() { //remove last node from LinkedList
          ListNode node = this.tail;
          if (this.head == this.tail)
              this.head = this.tail = null;
@@ -87,7 +87,7 @@
          return node;
      }
 
-     private ListNode remove(ListNode node) {
+     private ListNode remove(ListNode node) { //remove the node
          if (node == this.head)
              return removeFirst();
          else if (node == this.tail)
@@ -104,7 +104,7 @@
          }
      }
 
-     private void makeRecent(ListNode node) {
+     private void makeRecent(ListNode node) { // in this we move the node to the front of linkedlist
          if (node == this.tail)
              return;
 
@@ -112,8 +112,8 @@
          addLast(node);
      }
 
-     public int get(int key) {
-         if (!map.containsKey(key))
+     public int get(int key) { // get the value and add in the linkedlist
+         if (!map.containsKey(key)) //if value is not present in the linked list then return -1
              return -1;
 
          ListNode node = map.get(key);
@@ -121,9 +121,9 @@
          return node.value;
      }
 
-     public void put(int key, int value) {
-         if (map.containsKey(key)) {
-             ListNode node = map.get(key);
+     public void put(int key, int value) { //in this function whenever we put a value first we will check that whether that value is present or not in an hashmap
+         if (map.containsKey(key)) {  
+             ListNode node = map.get(key); // if value is present then we will update the value of the node
              node.value = value;
              makeRecent(node);
          } else {
