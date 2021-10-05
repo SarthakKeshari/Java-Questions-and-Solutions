@@ -27,10 +27,15 @@ import java.util.Arrays;
 public class PredictTheWinner {
     private static boolean PredictTheWinner(int[] nums) {
         int totalScore = 0;
+
+        // iterate through all the elements in an array to calculate the total possible score
         for(int i = 0; i < nums.length; i++) {
             totalScore += nums[i];
         }
 
+        // initialize a 2-d dp array to store answers for sub problems
+        // if the dp[i][j] is -1, that means we haven't calculated the answer for that particular subarray
+        // if not, then we can simply return the value instead of recalculating it again
         int[][] dp = new int[nums.length][nums.length];
         for(int i = 0; i < nums.length; i++) {
             for(int j = 0; j < nums.length; j++ ) {
@@ -38,17 +43,30 @@ public class PredictTheWinner {
             }
         }
 
+        // let's find out what is maximum score player 1 can get if plays optimally
         int player1Score = score(nums, 0, nums.length - 1, dp);
+
+        // similarly we can simply subtract it from total possible score to calculate the player 2 score
         int player2Score = totalScore - player1Score;
+
+        // player 1 wins if the score is not lower than player 2 score
         return player1Score >= player2Score;
     }
 
     private static int score(int[] nums, int i, int j, int[][] dp) {
         if(i > j) return 0;
+
+        // this is the base case and for single element, nums[i] is the only possible score a player can get
         if(i == j) return nums[i];
 
+        // if we have already calculated the score for this subarray, then we don't need to recalculate it
+        // and can return the one we stored in the 2d dp array
         if(dp[i][j] != -1) return dp[i][j];
 
+        // here a player can have two choice,
+        // 1) player picks the number from left end
+        // 2) or player picks the number from right end
+        // check above for the detailed explaination about the recurrence
         int selectLeft = nums[i] + Math.min(
                 score(nums, i + 2, j, dp),
                 score(nums, i + 1, j - 1, dp)
@@ -59,6 +77,7 @@ public class PredictTheWinner {
                 score(nums, i + 1, j - 1, dp)
         );
 
+        // persist the optimal score in an dp array before returning it
         return dp[i][j] = Math.max(selectLeft, selectRight);
     }
 
