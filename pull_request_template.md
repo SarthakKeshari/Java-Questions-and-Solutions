@@ -5,7 +5,7 @@ Kindly write your answer here
 Kindly write your answer here
 
 ### Screenshots(Attach 2 screenshots of your own input and output) - 
-Kindly write your answer here
+Attach here
 
 
 <br>
