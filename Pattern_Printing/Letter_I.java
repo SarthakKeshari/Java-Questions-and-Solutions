@@ -53,7 +53,7 @@ public class Letter_I {
 		
 		System.out.println("Please specify the height of the alphabet and keep that integer odd.");
 		
-		
+		//taking user input
 		int patternHeight = sc.nextInt();
 		
 		if(height % 2 == 0) {
@@ -62,6 +62,7 @@ public class Letter_I {
 			printI(patternHeight);
 		}
 		
+		//closed scanner
 		sc.close();
 	}
 }
