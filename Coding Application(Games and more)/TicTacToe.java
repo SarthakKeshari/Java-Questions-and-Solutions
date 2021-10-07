@@ -5,6 +5,8 @@ package dev.amitwani;
  * A program for end user so that he/she can play tic-tac-toe game with computer
  * or game can be played by two end users.
  *
+ * AUTHOR: Amit Wani (@mtwn105)
+ *
  */
 
 import java.util.ArrayList;
@@ -27,16 +29,24 @@ public class TicTacToe {
 
         scanner.nextLine();
 
+        // Game Board
         String[] game = new String[]{"*", "*", "*", "*", "*", "*", "*", "*", "*"};
+
+        // Player Marks
         String player1Mark = "X";
         String player2Mark = "O";
+
+        // Flag for checking if game is over
         boolean isGameOver = false;
         int nextTurn = 0;
 
+        // If Playing vs Bot
         if (choice == 1) {
 
+            // Get Player Name
             System.out.print("\nEnter your name –");
             String playerName = scanner.nextLine();
+
             String computerName = "T-Bot";
 
             System.out.println("Hey " + playerName + ", I am Computer. My name is ‘" + computerName + "’.");
@@ -48,21 +58,33 @@ public class TicTacToe {
 
             nextTurn = scanner.nextInt();
 
+            // Printing Initial Game Board
             printGameBoard(game);
 
+            // Playing until game is over
             while (!isGameOver) {
 
+                // Get Empty spaces remaining on the game board
                 List<Integer> emptySpaces = findEmptySpaces(game);
+
+                // If no empty spaces remaining & no winner is decided then its a draw
+                if (emptySpaces.size() == 0) {
+                    // DRAW
+                    System.out.println("RESULTS TIME: GAME IS A DRAW !!");
+                    break;
+                }
 
                 if (nextTurn == 1) {
 
                     System.out.print("T-Bot’s turn: ");
 
+                    // For Bot, Picking random empty space
                     Random random = new Random();
                     int nextMove = emptySpaces.get(random.nextInt(emptySpaces.size()));
 
                     System.out.print(nextMove);
 
+                    // Update the game board with bot's move
                     updateGameBoard(game, nextMove, player1Mark);
 
                     nextTurn = 2;
@@ -70,25 +92,23 @@ public class TicTacToe {
 
                     System.out.print(playerName + "’s turn: ");
 
+                    // Get Player's Next Move
                     playerNextMove(scanner, game, player2Mark, playerName, emptySpaces);
 
                     nextTurn = 1;
                 }
 
+                // Print board after every move
                 printGameBoard(game);
 
-                String result = checkIfGameOver(game);
-
-                if (result != null) {
-                    isGameOver = true;
-                    String winner = result.equals(player1Mark) ? "T-Bot" : playerName;
-                    System.out.println("RESULTS TIME:\n" + winner + " WON !!");
-                }
+                // Check Result
+                isGameOver = checkResult(game, player1Mark, computerName, playerName);
 
             }
 
         } else if (choice == 2) {
 
+            // Get Player Details
             System.out.print("\nEnter your name of player 1 –");
             String player1Name = scanner.nextLine();
             System.out.print("\nEnter your name of player 2 –");
@@ -101,16 +121,27 @@ public class TicTacToe {
 
             nextTurn = scanner.nextInt();
 
+            // Printing Initial Game Board
             printGameBoard(game);
 
+            // Playing until game is over
             while (!isGameOver) {
 
+                // Get Empty spaces remaining on the game board
                 List<Integer> emptySpaces = findEmptySpaces(game);
+
+                // If no empty spaces remaining & no winner is decided then its a draw
+                if (emptySpaces.size() == 0) {
+                    // DRAW
+                    System.out.println("RESULTS TIME: GAME IS A DRAW !!");
+                    break;
+                }
 
                 if (nextTurn == 1) {
 
                     System.out.print(player1Name + "’s turn: ");
 
+                    // Get Player's Next Move
                     playerNextMove(scanner, game, player1Mark, player1Name, emptySpaces);
 
                     nextTurn = 2;
@@ -118,25 +149,36 @@ public class TicTacToe {
 
                     System.out.print(player2Name + "’s turn: ");
 
+                    // Get Player's Next Move
                     playerNextMove(scanner, game, player2Mark, player2Name, emptySpaces);
 
                     nextTurn = 1;
                 }
 
+                // Print board after every move
                 printGameBoard(game);
 
-                String result = checkIfGameOver(game);
-
-                if (result != null) {
-                    isGameOver = true;
-                    String winner = result.equals(player1Mark) ? player1Name : player2Name;
-                    System.out.println("RESULTS TIME:\n" + winner + " WON !!");
-                }
+                // Check Result
+                isGameOver = checkResult(game, player1Mark, player1Name, player2Name);
 
             }
 
         }
 
+    }
+
+    private static boolean checkResult(String[] game, String playerMark, String player1Name, String player2Name) {
+        // Check if game is over after every move
+        String result = checkIfGameOver(game);
+
+        boolean isGameOver = false;
+
+        if (result != null) {
+            isGameOver = true;
+            String winner = result.equals(playerMark) ? player1Name : player2Name;
+            System.out.println("RESULTS TIME:\n" + winner + " WON !!");
+        }
+        return isGameOver;
     }
 
     private static void playerNextMove(Scanner scanner, String[] game, String playerMark, String playerName, List<Integer> emptySpaces) {
