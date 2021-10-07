@@ -3,17 +3,17 @@ package pattern_program;
 /*
 Write a program to print letter H exactly as shown below -
 
-$$$$$##$$$$$
-	 ##     
-   	 ##     
-   	 ##     
-   	 ##     
-   	 ##     
-   	 ##     
-   	 ##     
-   	 ##     
-   	 ##     
-$$$$$##$$$$$
+	$$$$$##$$$$$
+	     ##     
+   	     ##     
+   	     ##     
+   	     ##     
+   	     ##     
+   	     ##     
+   	     ##   
+   	     ##   
+   	     ##     
+	$$$$$##$$$$$
 */
 
 
