@@ -1,8 +1,9 @@
 {
     "java.project.sourcePaths": [
         "Sorting",
+        "Pattern_Printing",
         "Number Theory",
         "Basic Codes",
-        "Pattern_Printing"
+        "String Handling"
     ]
 }
