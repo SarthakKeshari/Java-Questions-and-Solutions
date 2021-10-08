@@ -23,20 +23,19 @@ public class Letter_F {
 	// function to print the letter F
 	public static void printLetterF(int letterHeight)
 	{
-	    
 	    for (int row = 0; row < letterHeight; row++)
 	    {
 	        System.out.print("##");
 	        for (int col = 0; col < letterHeight-2; col++)
 	        {
-				//condition for first and last line of the pattern
+		    //condition for first and last line of the pattern
 	            if ((row == 0) || (row == letterHeight / 2)) {
 	                System.out.print("$");
-				} else {
+		    } else {
 	                continue;
-				}
+		    }
 	        }
-			//shifting to new line after filling the current line pattern
+		//shifting to new line after filling the current line pattern
 	        System.out.println();
 	    }
 	}
