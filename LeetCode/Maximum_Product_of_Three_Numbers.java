@@ -43,27 +43,11 @@ public class Maximum_Product_of_Three_Numbers {
 	}
 
 	private static int maximumProduct(int[] nums) {
-//		first approach
-//		
-//		Arrays.sort(nums);
-//		int n = nums.length;
-//		  Arrays.sort(nums , Collections.reverseOrder());
-//		for (int i = 0; i < n / 2; i++) {
-//
-//			// Storing the first half elements temporarily
-//			int temp = nums[i];
-//
-//			// Assigning the first half to the last half
-//			nums[i] = nums[n - i - 1];
-//
-//			// Assigning the last half to the first half
-//			nums[n - i - 1] = temp;
-//		}
-//		int mul = nums[0] * nums[1] * nums[2];
-//		return mul;
-	
-//		second approach
-		
+			
+// 		if the numbers is negative and so it will be the first index position second index position after sorting
+// 		take that two numbers and Array's last index number
+// 		compair with the last three index numbers which are largest in the array after sorting
+// 		using the math.max function we got maximun from them
 		Arrays.sort(nums);
         int mul = Math.max(nums[0] * nums[1] * nums[nums.length - 1], nums[nums.length - 1] * nums[nums.length - 2] * nums[nums.length - 3]);
 		return mul;
