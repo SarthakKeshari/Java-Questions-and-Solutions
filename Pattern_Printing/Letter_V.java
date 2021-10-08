@@ -1,7 +1,10 @@
 package Pattern_Printing;
 
 public class Letter_V {
-    /* @@           @@
+    /*
+     * Write a program to print letter V exactly as shown below -
+     *
+     * @@           @@
      *  @@         @@
      *   @@       @@
      *    @@     @@
@@ -10,10 +13,15 @@ public class Letter_V {
      *       @@@
      * */
     public static void main(String[] args) {
+
+        /*  Parameters for printing letter .
+         *   This will allow the height, line thickness and spacing of the letter to be changed with ease
+         */
         int height = 7;
         int lineThickness = 2;
         int baseThickness = 3;
         String character = "@";
+
         int proceedingSpaces = 0;
         int trailingSpaces = (height * 2) - 3;
 
@@ -26,7 +34,7 @@ public class Letter_V {
 
             height--;
             proceedingSpaces++;
-            trailingSpaces-=2;
+            trailingSpaces -= 2;
         }
         printSpaces(proceedingSpaces);
         printCharacter(baseThickness, character);
