@@ -12,6 +12,7 @@ We love your input! We want you to make contributing to this simple questions/so
 
 Different types of contribution practices for this repository - 
 #### 1) Add a question and provide the solution for the same
+##### *provided question has been addressed earlier, so kindly go through the repository before raising an issue for a question.
 - Steps - <br>
   Step a) Click on Issues tab <br>
   Step b) Click on New Issue button <br>
@@ -38,6 +39,7 @@ Different types of contribution practices for this repository -
   Step h) Now you can workout the solution and generate PR(Pull request)
   
 #### 3) Add a question
+##### *provided question has been addressed earlier, so kindly go through the repository before raising an issue for a question.
 - Steps - <br>
   Step a) Click on Issues tab <br>
   Step b) Click on New Issue button <br>

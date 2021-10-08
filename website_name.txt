@@ -1,0 +1,5 @@
+Website Name : Coding Library
+A library is a place which is collection of books of all types which gives students all the necessary knowledge required.
+This website is going to serve as a single collection of useful codes from different people with different knowledge .
+ So I thought "Coding Library" is going to be best suited name for website
+.  

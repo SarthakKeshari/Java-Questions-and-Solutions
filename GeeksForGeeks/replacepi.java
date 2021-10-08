@@ -1,8 +1,17 @@
+
 //Replacing the char"pi" with the value "3.14".
 public class replacepi {
     //This function is main logic of the solution woth replace the "pi" with "3.14".
     public static String pi(String str) {
         if(str.length()<2){  //base case
+=======
+//Replacing the char"pi" with the value "3.14". if not no change
+public class replacepi {
+   
+    //This function is main logic of the solution woth replace the "pi" with "3.14".
+    public static String pi(String str) {
+        if(str.length()<2){ //base case
+
             return str;
         }
         else{
@@ -16,7 +25,11 @@ public class replacepi {
         }
     }
     public static void main(String[] args) {
+
         String str="xpix";// The string 
+=======
+        String str="xpix"; // The string 
+
         String ans=pi(str);
         System.out.println(ans);
     }
