@@ -7,6 +7,8 @@ Input:
 4 5 6
 7 8 9
 Output:1 4 7 8 5 2 3 6 9*/
+
+package matrix;
 import java.util.*;
 
 public class wave {
