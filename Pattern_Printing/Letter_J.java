@@ -1,3 +1,4 @@
+package Pattern_Printing;
 
 /*
 Write a program to print letter J exactly as shown below -
@@ -16,7 +17,7 @@ $$$$$##$$$$$
 
 import java.util.Scanner;
 
-class Letter_J{
+public class Letter_J{
     
   public static void main(String[] args){
       
@@ -38,6 +39,7 @@ class Letter_J{
   
   // main logic
   public static void printJ(int n){
+	  // print first line part 1
         for(int i=0; i <= n*2; i++){
             
             if(i==n){
@@ -48,7 +50,8 @@ class Letter_J{
             }
         }
         System.out.println();
-            
+		
+      // print rest of the lines where only ## and " " is required   part 2
         for(int i=0; i<n; i++){
             
             for(int j=0; j<n*2; j++){
@@ -60,7 +63,8 @@ class Letter_J{
             }
             System.out.println();
         }
-            
+        
+	  // print last 'u' pattern  part 3
         for(int i=0; i <= n/2; i++){
             
             for(int k =0; k<(2*i -1); k++){ 
