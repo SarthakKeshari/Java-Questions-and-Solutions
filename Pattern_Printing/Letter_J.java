@@ -1,4 +1,3 @@
-package pattern_program;
 
 /*
 Write a program to print letter J exactly as shown below -
@@ -15,10 +14,9 @@ $$$$$##$$$$$
 */
 
 
-
 import java.util.Scanner;
 
-public class Letter_J{
+class Letter_J{
     
   public static void main(String[] args){
       
