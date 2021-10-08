@@ -4,11 +4,11 @@ package pattern_program;
 Write a program to print letter J exactly as shown below -
 
 $$$$$##$$$$$
-	 ##     
-	 ##     
-	 ##     
-	 ##     
-	 ##     
+     ##     
+     ##     
+     ##     
+     ##     
+     ##     
 ##   ##     
  ##  ##
    ##
