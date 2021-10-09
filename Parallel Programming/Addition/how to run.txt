@@ -1,0 +1,15 @@
+Open 3 terminals at a same time
+
+run the commands in terminal-1:
+javac adder.java
+javac AddR.java
+javac myserver.java
+javac myclient.java
+rmiregistry 5000
+
+
+run this command in terminal 2:
+java myserver
+
+run this command in terminal 3:
+java myclient
