@@ -17,18 +17,18 @@ public class undirectedGraph
 	}
 
 	void addEdge(int v, int w) 
-    { 
-        adjacencyList[v].add(w);
+    	{ 
+        	adjacencyList[v].add(w);
 		adjacencyList[w].add(v); 
-    }
+    	}		
 
 	void printGraph()
 	{
 		
 		System.out.println("\nAdjacency list representation of graph");
-		for (int i = 0; i < adjacencyList.length; i++) {
+		for (int i = 0; i < adjacencyList.length; i++)
 			System.out.println(i+" : "+adjacencyList[i]);
-		}
+		
 	}
 
 	public static void main(String[] args)
