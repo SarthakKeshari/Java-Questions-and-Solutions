@@ -5,7 +5,7 @@ public class Kadane_Algorithm {
 
     //here we have taken tow sum maxsum,current sum
     static int maxSub(int arr[], int n){
-        int maxsum=-23455,cursum=0;
+        int maxsum=Integer.MIN_VALUE,cursum=0;
         for(int i=0;i<n;i++){
             cursum=cursum+arr[i];
            
