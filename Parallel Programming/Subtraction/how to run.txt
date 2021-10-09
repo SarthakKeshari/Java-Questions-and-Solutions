@@ -1,0 +1,15 @@
+Open 3 terminals at a same time
+
+run the commands in terminal-1:
+javac subtractr.java
+javac SubR.java
+javac subserver.java
+javac subclient.java
+rmiregistry 5000
+
+
+run this command in terminal 2:
+java subserver
+
+run this command in terminal 3:
+java subclient
