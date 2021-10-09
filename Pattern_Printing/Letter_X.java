@@ -1,5 +1,21 @@
 package Pattern_Printing;
 
+/*
+Expected Output=
+
+@@       ##
+ @@     ##
+  @@   ##
+   @@ ##
+    @@@
+   ## @@
+  ##   @@
+ ##     @@
+##       @@
+
+ */
+
+
 public class Letter_X {
 
     public static final String ATS = "@@";
