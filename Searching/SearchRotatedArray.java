@@ -1,5 +1,9 @@
 package searching;
 
+/*
+We are given a sorted array, which may or may not be rotated by a number of times,
+we need to search for a number in the array.
+ */
 public class SearchRotatedArray {
     public static void main(String[] args) {
         // rotated array happy path test.
