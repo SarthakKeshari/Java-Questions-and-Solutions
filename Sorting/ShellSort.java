@@ -1,5 +1,8 @@
+//Write a program to sort an array using Shell Sort Algorithm.
+
+
 /*
-in this implementation, we choose the gap to be half of that of the total length.
+In this implementation, we choose the gap to be half of that of the total length.
 after that the gap is again halved.
 the process is done till gap is not 1, which means then it will become insertion sort
 */
