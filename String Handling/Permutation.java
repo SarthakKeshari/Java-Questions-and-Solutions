@@ -1,3 +1,5 @@
+//Find The All Possible Permutations Of The Given String
+
 import java.util.Scanner;
 
 public class Permutation {
@@ -23,17 +25,18 @@ public class Permutation {
     public static   void permute( String input)
     {
         int inputLength = input.length();
-        boolean[ ] used = new boolean[ inputLength ];
-        StringBuffer outputString = new StringBuffer();
+        boolean[ ] used = new boolean[ inputLength ];     //check inputlength
+        StringBuffer outputString = new StringBuffer();   //Java StringBuffer class is used to create mutable (modifiable) String objects. 
+                                                          
         char[ ] in = input.toCharArray( );
         doPermute ( in, outputString, used, inputLength, 0 );
         
     }
     
-    public static    void doPermute ( char[ ] in, StringBuffer outputString,
+    public static    void doPermute ( char[ ] in, StringBuffer outputString,   //create doPermute function 
     boolean[ ] used, int inputLength, int level)
     {
-        if( level == inputLength) {
+        if( level == inputLength) {                       //check condition level of string inputlength 
             System.out.println ( outputString.toString());
             return;
         }
