@@ -1,4 +1,4 @@
-//Write a program to sort an array using Shell Sort Algorithm.
+/*Write a program to sort an array using Shell Sort Algorithm.*/
 
 
 /*
