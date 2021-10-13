@@ -1,3 +1,4 @@
+
 //Question: Count all the full nodes(nodes whose left and right children are not null)
 
 //initializing node class
@@ -10,9 +11,9 @@ class Node{
 	}
 }
 
-public class CountFullNodes{
+public class CountingFullNodes{
 	Node root;
-	CountFullNodes(){
+	CountingFullNodes(){
 		root=null;
 	}
 	//recursive function to get the count of full nodes
@@ -26,7 +27,7 @@ public class CountFullNodes{
 		return count;
 	}
   public static void main(String[] args) {
-  	CountFullNodes bs=new CountFullNodes();
+  	CountingFullNodes bs=new CountingFullNodes();
   	bs.root=new Node(1);
   	bs.root.left = new Node(7);  
       bs.root.right = new Node(3);  
