@@ -1,4 +1,4 @@
-///zeroerror_exception
+///zeroerror_exceptionhandling
 
 import java.util.*;  
 ///handling exception of dividing a number by zero
