@@ -31,59 +31,59 @@ public class BreadthFirstSearh
 	}
 
 	void BFS(int v)
-    {
-        // Mark all the vertices as not visited(By default
-        // set as false)
-        boolean visited[] = new boolean[size];
+    	{
+        	// Mark all the vertices as not visited(By default
+        	// set as false)
+        	boolean visited[] = new boolean[size];
  
-        // Create a queue for BFS
-        LinkedList<Integer> queue = new LinkedList<Integer>();
+        	// Create a queue for BFS
+        	LinkedList<Integer> queue = new LinkedList<Integer>();
  
-        // Mark the current node as visited
-        visited[v]=true;
+        	// Mark the current node as visited
+        	visited[v]=true;
+	
+        	// add the current node in the queue
+        	queue.add(v);
+ 
+        	// loop till queue becomes empty
+        	while (queue.size() != 0)
+        	{
+        	    // remove the vertex from the front of queue
+            	    v = queue.poll();
 
-        // add the current node in the queue
-        queue.add(v);
+           	    // print the vertex
+          	    System.out.print(v+" ");
  
-        // loop till queue becomes empty
-        while (queue.size() != 0)
-        {
-            // remove the vertex from the front of queue
-            v = queue.poll();
-
-            // print the vertex
-            System.out.print(v+" ");
- 
-            // Check all adjacent vertices of the removed vertex v
-            // If a adjacent has not been visited, then mark it
-            // visited and add it to the queue
-            Iterator<Integer> i = adj[v].listIterator();
-            while (i.hasNext())
-            {
-                int n = i.next();
-                if (!visited[n])
-                {
-                    visited[n] = true;
-                    queue.add(n);
-                }
-            }
-        }
-    }
+	            // Check all adjacent vertices of the removed vertex v
+	            // If a adjacent has not been visited, then mark it
+	            // visited and add it to the queue
+	            Iterator<Integer> i = adj[v].listIterator();
+	            while (i.hasNext())
+	            {
+        	        int n = i.next();
+                	if (!visited[n])
+                	{
+                	    visited[n] = true;
+                	    queue.add(n);
+                	}
+            	    }
+        	}
+    	}
 	// Driver Code
 	public static void main(String args[])
 	{
 		BreadthFirstSearh graph = new BreadthFirstSearh(5);
 
-        // adding different edges
-        graph.addEdge(0, 1);
+        	// adding different edges
+        	graph.addEdge(0, 1);
 		graph.addEdge(1, 2);
 		graph.addEdge(2, 3);
 		graph.addEdge(3, 4);
 		graph.addEdge(4, 0);
-        graph.addEdge(4, 1);
-        graph.addEdge(1, 3);
+        	graph.addEdge(4, 1);
+        	graph.addEdge(1, 3);
 		
-        int v = 1;  // starting vertex 
+        	int v = 1;  // starting vertex 
 		System.out.println("Breadth First Traversal starting from vertex " + v + " is");
 
 		graph.BFS(v);
