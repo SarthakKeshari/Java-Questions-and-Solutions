@@ -4,7 +4,7 @@
 import java.util.*;
 
 // This class represents a
-// directed graph using adjacency
+// undirected graph using adjacency
 // list representation
 class DepthFirstSearh 
 {
@@ -26,31 +26,31 @@ class DepthFirstSearh
 	  // Function to add an edge into the graph (undirected)
 	  void addEdge(int v, int w)
 	  {
-		    adj[v].add(w); // add edge v --> w
-        adj[w].add(v); // add edge w --> v
+		adj[v].add(w); // add edge v --> w
+        	adj[w].add(v); // add edge w --> v
 	  }
 
 	  // Recursive function to do depth first traversal
 	  void DFS(int v, boolean visited[])
 	  {
-		    // Mark the current vertex as visited
-		    visited[v] = true;
+		// Mark the current vertex as visited
+		visited[v] = true;
 
-        // Print the current node
-		    System.out.print(v + " ");
+        	// Print the current node
+		System.out.print(v + " ");
 
     		// Recur for all the vertices adjacent to this vertex
-		    Iterator<Integer> i = adj[v].listIterator();
+		Iterator<Integer> i = adj[v].listIterator();
 		
-        // loop through the vertices connected to current node
-        while (i.hasNext())
-		    {
-            // store the connected vertices
-			      int n = i.next();
-			      if (!visited[n])
-                // call DFS again for the connected vertices
-				        DFS(n, visited);
-		    }
+        	// loop through the vertices connected to current node
+        	while (i.hasNext())
+		{
+            		// store the connected vertices
+			int n = i.next();
+			if (!visited[n])
+                	// call DFS again for the connected vertices
+			DFS(n, visited);
+		}
 	  }
 
 	  // Support function to the recursive DFS method
@@ -66,24 +66,20 @@ class DepthFirstSearh
 	  // Driver Code
 	  public static void main(String args[])
 	  {
-		    DepthFirstSearh graph = new DepthFirstSearh(9);
+		DepthFirstSearh graph = new DepthFirstSearh(9);
 
-        // adding different edges
-        graph.addEdge(0, 3);
-		    graph.addEdge(1, 7);
-		    graph.addEdge(2, 5);
-		    graph.addEdge(3, 6);
-		    graph.addEdge(4, 1);
-        graph.addEdge(5, 8);
-        graph.addEdge(6, 0);
-        graph.addEdge(7, 4);
-        graph.addEdge(7, 5);
-        graph.addEdge(8, 6);
-        graph.addEdge(8, 2);
+        	// adding different edges
+		graph.addEdge(0, 1);
+		graph.addEdge(1, 2);
+		graph.addEdge(2, 3);
+		graph.addEdge(3, 4);
+		graph.addEdge(4, 0);
+        	graph.addEdge(4, 1);
+        	graph.addEdge(1, 3);
 		
-        int v = 1;  // starting vertex for depth first traversal
-		    System.out.println("Depth First Traversal starting from vertex " + v + " is");
+        	int v = 1;  // starting vertex
+		System.out.println("Depth First Traversal starting from vertex " + v + " is");
 
-		    graph.DFS(v);
+		graph.DFS(v);
 	  }
 }
