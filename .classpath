@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="Arrays/1D Arrays"/>
+	<classpathentry kind="src" path="Arrays/2D Arrays"/>
+	<classpathentry kind="src" path="Basic Codes"/>
+	<classpathentry kind="src" path="Bit Manipulation"/>
+	<classpathentry kind="src" path="CodeChef"/>
+	<classpathentry kind="src" path="Data Structure/Heap"/>
+	<classpathentry kind="src" path="Data Structure/Queue/Basic Queue"/>
+	<classpathentry kind="src" path="Data Structure/Stack"/>
+	<classpathentry kind="src" path="Data Structure/Trees/Binary Trees"/>
+	<classpathentry kind="src" path="GeeksForGeeks"/>
+	<classpathentry kind="src" path="Hackerrank"/>
+	<classpathentry kind="src" path="LeetCode"/>
+	<classpathentry kind="src" path="Number Theory"/>
+	<classpathentry kind="src" path="Pattern_Printing"/>
+	<classpathentry kind="src" path="Recursion"/>
+	<classpathentry kind="src" path="Searching"/>
+	<classpathentry kind="src" path="Sorting"/>
+	<classpathentry kind="src" path="String Handling"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

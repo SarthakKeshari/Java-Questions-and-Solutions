@@ -1,7 +1,7 @@
 //Find the roots of the quadratic Equation
 import java.util.Scanner;
 
-public class quadratic_roots {
+public class RootsOfQuadraticEqn {
 
 	public static void main(String[] args) {
 		Scanner reader = new Scanner(System.in);

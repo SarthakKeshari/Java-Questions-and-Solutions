@@ -59,7 +59,6 @@ class semisort1
          {
             ar[i]=Integer.parseInt(br.readLine());
          }
-         semisort1 obj= new semisort1(); //Program by LN11211
-         obj.sort(ar,len,styl);
+         semisort1.sort(ar,len,styl);
         }
 }
