@@ -53,6 +53,8 @@ public class DigitalClock {
 
             //It interrupts the program's execution in 1 sec to give realism to the clock
             Thread.sleep(1000);
+            System.out.print("\033[H\033[2J");
+            System.out.flush();
         }
     }   
 }
