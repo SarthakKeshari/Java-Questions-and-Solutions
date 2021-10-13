@@ -10,6 +10,12 @@ Star ⭐ |  Fork 🔗 |  Contribute 💻
 
 Finally project is on its way to turn into a website 
 ### Website name - Coding Library <sub>(Contributed by [@Monica-Chhabria](https://github.com/Monica-Chhabria) during Phase-1 of website creation)</sub>
+### Website logo - 
+<p align="center">
+  <img src="https://github.com/SarthakKeshari/Java-Questions-and-Solutions/blob/master/Website%20Logo.png" width=40% height=40%>
+</p>
+
+### <p align="right"><sub>(Contributed by [@MohammedHassan07](https://github.com/MohammedHassan07) during Phase-2 of website creation)</sub></p>
 
 <br>
 
