@@ -56,7 +56,7 @@ public class Letter_I {
 		//taking user input
 		int patternHeight = sc.nextInt();
 		
-		if(height % 2 == 0) {
+		if(patternHeight % 2 == 0) {
 			System.out.println("Please specify any odd integer for a better view.");
 		} else {
 			printI(patternHeight);
