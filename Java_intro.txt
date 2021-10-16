@@ -1,0 +1,31 @@
+Java Introduction
+    -Anushka Srivastava
+Java is a powerful , versatile and general-purpose programming language. Java was invented by James Gosling. Java was developed by Sun Microsystem in 1991. It was originally called Oak and in 1995 renamed to Java. Java is a middle level and case sensitive language.
+History 
+The Java language project was initiated by James Gosling , Mike Sheridan and Patrick Naughton in June 1991. It was called Oak initially because there was an oak tree that stood in front of Gosling’s Office. Then, it was renamed as Green and then finally  Java. It was designed in a way with the style of C/C++ syntax so that programmers can easily understand.
+The first public implementation , Java 1.0 was released by Sun Microsystem in 1996. It was fairly secure with the functionality of Write Once , Run Anywhere which provides no cost for runtime on popular platforms. Arthur van Hoff  rewritten Java 1.0 compiler in Java. Advent of Java 2 which was released initially in December 1998-1999 as J2SE 1.2. 
+Technologies and API’s for enterprise application were included in J2EE. J2ME featured optimized APIs for mobile application. To formularize Java ISO/IEC JTC 1 standard body was approached by Sun Microsystem in 1997 but the process was withdrawn. Java Virtual Machine , free and open source software was released by Sun on 13th November, 2006 under the terms of GPL-2.0-only license. Sun finished the process of making all core code available under free software/ open source distribution terms on 8th May, 2007. Java runtime environment based on JDK 9 will discontinue the browser plugin was announced by Oracle on January, 2016. 
+Advantages
+•	Java is a simple language. It is easy to learn for beginners and allows us to write programs easily.
+•	Java is a compiled and interpreted language. Compiler and Interpreter are translator programs which are used to convert the source code to machine code which can be executed on computer.
+•	Java is a platform independent language.The code written in java can easily run on any platform.
+•	Java is an object oriented language.The codes written in java are made simpler by dividing it into number of objects and classes. these object are used to connect different functions together.
+•	Java is a distributed language. We can create applications for networks of computers and can share data and programs.
+•	Java has high performance. Programs written in java are executed very fast.
+•	Java is a robust and secure language as it has many safeguards. Java is a reliable language. It supports concepts of exception handling and also has a garbage collector.
+•	Java is a multithreaded programming language. It allows us to write program that do multiple things or tasks simultaneously.
+
+Disadvantages : 
+•	Java is a comparatively slow language.
+•	A huge memory space is required by Java.
+•	Java codes can be very complex.
+
+IDEs 
+•	Eclipse
+•	BlueJ
+•	Visual Studio Code
+•	Sublime Text
+Uses :
+->On webservers to create dynamic websites.
+->Development of applications for computers , mobiles , desktop and servers.
+-> Used for the development of Games.
