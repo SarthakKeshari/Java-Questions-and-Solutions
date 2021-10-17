@@ -21,17 +21,25 @@ public class AllSubstrings {
 			}
 
 		}
+		// adding the result in a string because we need to transfor this in Array of Character after all
 		String result = String.valueOf(uniqueSubs);
+		// removing the [] , we dont need this inside the array and after ensuring that just have one space between the Character
 		result = result.substring(1, 21).replaceAll("\\s+", "");
+		//Storing the result inside Array of Characters
 		String[] filter = result.split(",");
-
+		
+		// Declaring the variables for the First check , wich will verify every Character
 		String filterPass = "";
 		String filterRemove = "";
-
+		
+		
 		for (String string2 : filter) {
 			if (string2.length() == 1) {
 				filterPass += string2 + " ";
 			} else {
+				// Java has a method which retuns the numbers of the CodePoint at determinated index of array
+				// So, we need to loop and comparing all results possible
+				// In this code i opted for storing the valid ones and the failed , but you can just store one of them.
 				for (int i = 0; i < string2.length() - 1; i++) {
 					for (int j = i + 1; j <= string2.length() - i - 1; j++) {
 						if (Character.codePointAt(string2, i) < Character.codePointAt(string2, j)) {
@@ -45,6 +53,8 @@ public class AllSubstrings {
 			}
 
 		}
+		
+		// Second Check , just for garantee  that if is contained in the Failed not to be in the approved.
 		
 		String[] arrPass = filterPass.split(" ");
 		String[] arrFail = filterRemove.split(" ");
